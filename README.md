@@ -12,6 +12,8 @@ Predict whether a vision insurance claim is fraud-labeled using information avai
 
 ## Dataset
 
+Source: [https://www.kaggle.com/datasets/ashok0282/synthetic-vision-insurance-claims-fraud-detection](https://www.kaggle.com/datasets/ashok0282/synthetic-vision-insurance-claims-fraud-detection)
+
 Each row is one claim. Columns cover identifiers, service and submission dates, billed amounts, diagnoses and plan context, procedure combination flags, coverage timing, member and provider history, a `fraud_type` label, and the binary target `is_fraud`.
 
 - `claim_id`, `member_id`, `provider_id` — identifiers for grouping and traceability only
