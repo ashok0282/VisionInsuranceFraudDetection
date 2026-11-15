@@ -31,10 +31,10 @@ Full feature definitions are in [dataset/Dataset_Guide.md](dataset/Dataset_Guide
 - **High fraud rate on uncommon flags:** Relative to the 3% base rate, fraud is much more common when `prior_exact_duplicate_within_3_service_days` is 1 (~95%), `fitting_without_contacts` is 1 (~76%), `claim_frequency_code` is 7 / replacement (~41%), `materials_without_exam` is 1 (~40%), `outside_coverage` is 1 (~36%), there is no exam line (~32%), or `imaging_with_routine_primary_dx` is 1 (~28%). 
 - **Billed amount is higher on fraud-labeled claims:** Mean `total_billed` is about $596 vs $341 for non-fraud; `max_line_billed` and `billed_per_line` move in the same direction. `age` is not associated with the label. `plan_type` fraud rates are essentially the same.
 - **Collinear billing and history columns:**
-  -  `total_billed` and `log_total_billed` correlate at about 0.91; 
+  - `total_billed` and `log_total_billed` correlate at about 0.91; 
   - `line_count` and `total_units` at about 0.90; 
   - billed size also tracks `max_line_billed` and `billed_per_line`. `has_exam` and `materials_without_exam` are near-opposites. 
-  - Member history counts (`member_prior_claim_count` vs `member_provider_prior_claim_count`) overlap strongly. 
+  - Member history counts (`member_prior_claim_count` vs `member_provider_prior_claim_count`) overlap strongly.
 
 ## How to run
 
@@ -51,9 +51,3 @@ DATA_PATH = Path("../dataset/VisionInsurance_claims_dataset.csv")
 ```
 
 Run the notebook from the `notebook/` directory so that relative path works, or use an absolute path to `dataset/VisionInsurance_claims_dataset.csv`.
-
-## Status
-
-Completed: data understanding and exploratory analysis.
-
-Not in this repository yet: time-aware or provider-grouped train/test splits, missing-value handling after the split, models, and evaluation.
