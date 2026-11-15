@@ -44,7 +44,7 @@ Python 3 with pandas and matplotlib is enough for the current notebook.
 
 1. Clone the repository.
 2. Open `notebook/Data_Understanding_and_exploratory data analysis_EDA.ipynb` in Jupyter or another notebook environment.
-3. Point `DATA_PATH` at the CSV in this repo. The notebook currently loads `VisionInsurance_Fraud_40_Features.csv`. Use the in-repo file instead:
+3. Point `DATA_PATH` at the CSV in this repo. The notebook currently loads VisionInsurance_claims_dataset`.csv`. 
 
 ```python
 from pathlib import Path
